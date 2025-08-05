@@ -112,9 +112,9 @@ Follow these steps to install and run the project on your local machine:
 
 #### 1. Clone the Repository
 
-bash
+'''bash
 git clone https://github.com/your-username/site-content-optimizer.git
-cd site-content-optimizer
+cd site-content-optimizer'''
 
 ---
 
