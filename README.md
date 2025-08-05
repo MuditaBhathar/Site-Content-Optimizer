@@ -99,7 +99,7 @@ A loading spinner and user-friendly feedback messages are shown to indicate prog
 
 Create a `.env` file in the root of the backend project with:
 
-```env
+env
 GEMINI_API_KEY=your_google_gemini_api_key_here
 
 ---
@@ -112,12 +112,13 @@ Follow these steps to install and run the project on your local machine:
 
 #### 1. Clone the Repository
 
-```bash
+bash
 git clone https://github.com/your-username/site-content-optimizer.git
 cd site-content-optimizer
 
+---
 
-2. Set Up the Frontend
+### 2. Set Up the Frontend
 bash
 Copy
 Edit
@@ -126,7 +127,9 @@ npm install
 npm run dev
 The frontend will be available at http://localhost:5173
 
-3. Set Up the Backend
+---
+
+### 3. Set Up the Backend
 Open a new terminal window and run:
 
 bash
@@ -134,7 +137,10 @@ Copy
 Edit
 cd server
 npm install
-4. Configure Environment Variables
+
+---
+
+### 4. Configure Environment Variables
 Inside the server folder, create a file named .env and add the following:
 
 env
@@ -142,20 +148,26 @@ Copy
 Edit
 GEMINI_API_KEY=your_google_gemini_api_key_here
 
-5. Start the Backend Server
+---
+
+### 5. Start the Backend Server
 bash
 Copy
 Edit
 node index.js
 The backend will run on http://localhost:5000
 
+---
+
 You're now ready to use the app locally!
 
-🧠 Gemini Prompt Strategy
+### 🧠 Gemini Prompt Strategy
 Prompts sent to Gemini API focus on improving clarity, readability, persuasion, and SEO.
 The AI is instructed to avoid changing the meaning and to retain structure where possible.
 
-📂 Project Structure
+---
+
+### 📂 Project Structure
 bash
 Copy
 Edit
@@ -171,3 +183,4 @@ site-content-optimizer/
 ├── .env              # Environment variables
 ├── README.md
 
+---
