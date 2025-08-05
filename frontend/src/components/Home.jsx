@@ -14,7 +14,7 @@ export default function Home() {
     setResult(null)
 
     try {
-      const res = await fetch('http://localhost:5000/api/improve', {
+      const res = await fetch('https://site-content-optimizer.onrender.comgit ad', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url })
