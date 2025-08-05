@@ -14,7 +14,7 @@ export default function Home() {
     setResult(null)
 
     try {
-      const res = await fetch('https://site-content-optimizer.onrender.comgit ad', {
+      const res = await fetch('https://site-content-optimizer.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url })
@@ -39,10 +39,10 @@ export default function Home() {
           result ? 'mt-6' : 'mt-28'
         }`}
       >
-        <h1 className="text-5xl font-extrabold mb-4 text-black">
+        <h1 className="text-xl font-extrabold mb-4 text-black">
           Site Content Optimizer
         </h1>
-        <p className="text-2xl text-gray-700 max-w-2xl mb-8">
+        <p className="text-xl text-gray-700 max-w-2xl mb-8">
           Improve your website's copy using AI. Paste a URL and get a cleaner, high-converting version instantly.
         </p>
 
@@ -53,14 +53,14 @@ export default function Home() {
           <input
             type="url"
             required
-            className="flex-1 border border-gray-300 px-5 py-4 text-2xl rounded-lg shadow focus:outline-blue-500"
+            className="flex-1 border border-gray-300 px-5 py-4 text-xl rounded-lg shadow focus:outline-blue-500"
             placeholder="https://example.com"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
           />
           <button
             type="submit"
-            className="bg-blue-600 text-white px-8 py-4 text-3xl rounded-lg shadow hover:scale-105 hover:bg-blue-700 transition min-w-[150px]"
+            className="bg-blue-600 text-white px-8 py-4 text-xl rounded-lg shadow hover:scale-105 hover:bg-blue-700 transition min-w-[150px]"
             disabled={loading}
           >
             {loading ? 'Improving...' : 'Improve'}
