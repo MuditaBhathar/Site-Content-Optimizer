@@ -104,12 +104,12 @@ GEMINI_API_KEY=your_google_gemini_api_key_here
 
 ---
 
-### 🛠 Installation
+**### 🛠 Installation**
 
 Follow these steps to install and run the project on your local machine:
 
-#### 1. Clone the Repository
-
+**#### 1. Clone the Repository
+**
 ```bash
 git clone https://github.com/your-username/site-content-optimizer.git
 cd site-content-optimizer
