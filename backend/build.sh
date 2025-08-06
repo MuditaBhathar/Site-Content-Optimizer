@@ -5,4 +5,5 @@ pip install -r requirements.txt
 
 # Install Playwright dependencies & browser binaries
 
+python -m playwright install
 
