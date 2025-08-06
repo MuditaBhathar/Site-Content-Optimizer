@@ -115,11 +115,9 @@ def improve():
             "improved": str(soup_improved)
         })
     except Exception as e:
-        print("Backend error:", e)
-        return jsonify({
-            "original": f"⚠️ Could not access {url}",
-            "improved": "⚠️ Could not improve this site"
-        }), 500
+        import traceback
+        traceback.print_exc()  # Log to console
+        return jsonify({"error": f"Server crashed: {str(e)}"}), 500
 
 @app.route("/", methods=["GET"])
 def home():
