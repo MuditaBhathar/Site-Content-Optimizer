@@ -3,11 +3,11 @@ import { Mail, Phone, MapPin } from 'lucide-react'
 export default function Contact() {
   return (
     <div className="min-h-screen px-8 py-12 bg-gray-50 text-gray-900">
-      <h2 className="text-2xl font-extrabold mb-12 text-blue-700 text-center">Contact Us</h2>
+      <h2 className="text-4xl font-extrabold mb-12 text-blue-700 text-center">Contact Us</h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Left: Contact Info */}
-        <div className="space-y-8 text-xl">
+        <div className="space-y-8 text-2xl">
           <div className="flex items-center gap-4">
             <Mail className="text-blue-600 w-6 h-6" />
             <span className="font-medium">contact@siteoptimizer.com</span>
@@ -21,7 +21,7 @@ export default function Contact() {
             <span className="font-medium">Mumbai, India</span>
           </div>
 
-          <div className="text-gray-700 text-xl">
+          <div className="text-gray-700 text-2xl">
             <p><span className="font-semibold">Business Hours:</span> Mon - Fri, 10:00 AM - 6:00 PM</p>
             <p className="mt-4">Feel free to reach out. We'll get back to you within 24 hours.</p>
           </div>
