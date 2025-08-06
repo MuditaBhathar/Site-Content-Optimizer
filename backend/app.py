@@ -7,14 +7,11 @@ from urllib.parse import urljoin
 import os
 
 app = Flask(__name__)
-CORS(app, resources={
-    r"/api/*": {
-        "origins": [
-            "http://localhost:5173",
-            "https://site-content-optimizer-frontend.onrender.com"
-        ]
-    }
-})
+CORS(app, supports_credentials=True, origins=[
+    "http://localhost:5173",
+    "https://site-content-optimizer-frontend.onrender.com"
+])
+
 
 
 
