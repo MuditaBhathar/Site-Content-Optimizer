@@ -7,7 +7,7 @@ from urllib.parse import urljoin
 import os
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["http://localhost:5173", "https://site-content-optimizer-frontend.onrender.com"]}})
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 
 # 🔐 Gemini API Key
